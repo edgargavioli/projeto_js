@@ -22,6 +22,11 @@ export default {
             name: 'texto',
             title: 'Texto da avaliação',
             type: 'string'
+        },
+        {
+            name: 'img',
+            title: 'Foto do avaliador',
+            type: 'image'
         }
     ]
 }
