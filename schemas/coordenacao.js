@@ -11,7 +11,19 @@ export default {
         {
             name: 'imagem',
             title: 'Imagem coordenador',
-            type: 'image'
+            type: 'image',
+            validation: Rule => Rule.custom(file =>{
+                if(!file.asset){
+                    return 'Nenhuma imagem selecionada'
+                }
+                if(Image.asset){
+                    const {width, height} = Image.asset.metadata.dimensions
+                    if(width !== 360 || height !== 360 && Image.asset.size > 10000){
+                        return 'Tamanho de imagem inválido, 360x360px é o tamanho ideal'
+                    }
+                }
+                return true
+            })
         }
     ]
 }
