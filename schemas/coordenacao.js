@@ -16,7 +16,7 @@ export default {
                 if(!file.asset){
                     return 'Nenhuma imagem selecionada'
                 }
-                if(Image.asset){
+                if(file.asset){
                     const {width, height} = Image.asset.metadata.dimensions
                     if(width !== 360 || height !== 360 && Image.asset.size > 10000){
                         return 'Tamanho de imagem inválido, 360x360px é o tamanho ideal'
