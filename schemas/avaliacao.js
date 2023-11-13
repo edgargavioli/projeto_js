@@ -1,5 +1,5 @@
 export default {
-    name: 'avaliacoes',
+    name: 'avaliacao',
     type: 'document',
     title: 'Cadastro de avaliacoes',
     fields: [
