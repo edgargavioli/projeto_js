@@ -9,7 +9,7 @@ export default {
             title: 'Nome Completo'
         },
         {
-            name: 'imagemProfessor',
+            name: 'imagem_professor',
             type: 'image',
             title: 'Imagem do professor',
         },
